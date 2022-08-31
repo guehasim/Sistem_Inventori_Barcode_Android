@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/txt_repair_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:editable="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/txt_repair_serial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Serial"
+                android:editable="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/txt_repair_org"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yang Memperbaiki"
+                android:editable="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/txt_repair_tgl_selesai"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Selesai"
+                    android:editable="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/cek_done_repair"
+                android:src="@drawable/ic_action_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Kondisi"
+                android:textSize="18dp"/>
+
+            <Spinner
+                android:id="@+id/txt_kondisi_repair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:entries="@array/array_kondisi"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/txt_repair_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Catatan" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/txt_id_perbaiki"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText
+            android:id="@+id/txt_parent_perbaiki"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_selesai_perbaiki"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:background="#F27441"
+            android:textSize="20dp"
+            android:text="Selesai"/>
+
+    </LinearLayout>
+</ScrollView>

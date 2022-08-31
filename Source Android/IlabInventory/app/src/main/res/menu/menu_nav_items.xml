@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Status Inventaris">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_rusak"
+                    android:icon="@drawable/rusak"
+                    android:title="Rusak"/>
+                <item
+                    android:id="@+id/nav_perbaiki"
+                    android:icon="@drawable/diperbaiki"
+                    android:title="Diperbaiki"/>
+                <item
+                    android:id="@+id/nav_pinjam"
+                    android:icon="@drawable/dipinjam"
+                    android:title="Dipinjam" />
+                <item
+                    android:id="@+id/nav_hilang"
+                    android:icon="@drawable/move"
+                    android:title="Hilang" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="2dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rw_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/rw_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Barang"
+            android:textColor="#000000"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/rw_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/rw_barang"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/k_rusak"
+            android:text="Serial"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="3dp"
+            android:background="#BDBDBD"
+            android:layout_below="@+id/rw_serial"/>
+
+        <LinearLayout
+            android:id="@+id/p_pin"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garis">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Tanggal Pinjam "
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rw_tgl_pinjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="13dp"
+                android:textColor="#000000"
+                android:text="Tanggal Pinjam "
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p_kem"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_pin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Tanggal Kembali"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rw_tgl_kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:text="Tanggal Kembali"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p_pem"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_kem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Peminjam"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/rw_peminjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="55dp"
+                android:textColor="#000000"
+                android:text="Peminjam"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/p_note"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_pem">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Catatan"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rw_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="68dp"
+                android:textColor="#000000"
+                android:text="Catatan"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/garisbawah"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#BDBDBD"
+            android:layout_below="@+id/p_note"/>
+    </RelativeLayout>
+
+</LinearLayout>

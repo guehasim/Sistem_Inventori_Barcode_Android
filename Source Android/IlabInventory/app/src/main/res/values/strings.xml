@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">IlabInventory</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="nim">Nomor Induk Mahasiswa / ID Lain</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    
+    <string name="ket_ktm">Pindai barcode identitas peminjam barang berupa : Kartu Tanda Mahasiswa, atau yang lain</string>
+    <string name="ket_bar">Pindai barcode barang yang akan dipinjam</string>
+    <string name="hint_name_cari">Masukan Nama......</string>
+
+    <string-array name="array_kondisi">
+        <item>Baik</item>
+        <item>Kurang Baik</item>
+        <item>Rusak</item>
+        <item>Hancur</item>
+    </string-array>
+
+    <string-array name="array_sedia">
+        <item>Ada</item>
+        <item>Sedang Dipinjam</item>
+        <item>Sedang Diperbaiki</item>
+        <item>Hilang</item>
+        <item>Tidak Tersedia</item>
+    </string-array>
+</resources>

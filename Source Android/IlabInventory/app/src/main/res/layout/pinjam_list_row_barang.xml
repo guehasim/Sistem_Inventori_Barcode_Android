@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pinjam_name_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/k_hancur"
+        android:padding="5dp"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/pinjam_serial_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/pinjam_name"
+        android:layout_marginLeft="50dp"
+        android:textColor="#4900BF"
+        android:text="Serial "
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/garisbawah"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#BDBDBD"
+        android:layout_below="@+id/pinjam_serial_bar"/>
+
+</LinearLayout>

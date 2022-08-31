@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="2dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/stuff_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sub_stuff_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/parent_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/stuff_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stuff_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/stuff_name"
+            android:layout_marginLeft="50dp"
+            android:textColor="#4900BF"
+            android:text="Serial "
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/stuff_tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@+id/stuff_name"
+            android:layout_alignParentRight="true"
+            android:textColor="#ED0722"
+            android:text="Tahun "
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="3dp"
+            android:background="#BDBDBD"
+            android:layout_below="@+id/stuff_tahun"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/p_merk"
+            android:layout_below="@+id/garis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Merk"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stuff_merk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="60dp"
+                android:textColor="#000000"
+                android:text="Merk"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stuff_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/p_model"
+            android:layout_below="@+id/p_merk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Model"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stuff_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="54dp"
+                android:textColor="#000000"
+                android:text="Model"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/p_kondisi"
+            android:layout_below="@+id/p_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Kondisi"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stuff_kondisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="47dp"
+                android:textColor="#000000"
+                android:text="Kondisi"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/p_sedia"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/p_kondisi"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#000000"
+                android:text="Ketersediaan"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stuff_sedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:text="Ketersediaan"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/garisbawah"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#BDBDBD"
+            android:layout_below="@+id/p_sedia"/>
+    </RelativeLayout>
+
+</LinearLayout>

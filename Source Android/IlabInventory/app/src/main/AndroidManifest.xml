@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmadhasim.ilabinventory">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".controller.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".start.StartUp"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginMain" />
+        <activity
+            android:name=".inventaris.InventMain"
+            android:label="Data Inventaris"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventaris.InventTambah"
+            android:label="Tambah Inventaris">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventScanSerial"
+            android:label="Pindai Serial">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventTambah" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventEdit"
+            android:label="Edit Inventaris">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventDetail"
+            android:label="Detail Inventaris">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventDetailTambah"
+            android:label="Tambah Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventDetail" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventLaporRusak"
+            android:label="Lapor Kerusakan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventLaporHilang"
+            android:label="Lapor Kehilangan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventCari"
+            android:label="Inventaris Cari" />
+        <activity
+            android:name=".menu.MenuMain"
+            android:label="Menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventPindahBarcode1"
+            android:label="Barcode Inventaris">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventMain" />
+        </activity>
+        <activity
+            android:name=".inventaris.InventPindahBarcode2"
+            android:label="Barcode Lokasi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inventaris.InventPindahBarcode1" />
+        </activity>
+        <activity
+            android:name=".perbaiki.PerbaikiMain"
+            android:label="Sedang Diperbaiki">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu.MenuMain" />
+        </activity>
+        <activity
+            android:name=".perbaiki.PerbaikiCari"
+            android:label="Perbaiki Cari" />
+        <activity
+            android:name=".perbaiki.PerbaikiFix"
+            android:label="Selesai Perbaiki">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".perbaiki.PerbaikiMain" />
+        </activity>
+        <activity
+            android:name=".perbaiki.PerbaikiRiwayat"
+            android:label="Riwayat Perbaikan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".perbaiki.PerbaikiMain" />
+        </activity>
+        <activity
+            android:name=".perbaiki.PerbaikiRiwayatCari"
+            android:label="Perbaiki Riwayat Cari" />
+        <activity
+            android:name=".pinjam.BarcodeKTM"
+            android:label="Pindai KTM"/>
+        <activity
+            android:name=".pinjam.BarcodeBarang"
+            android:label="Pindai Barang" />
+        <activity
+            android:name=".pinjam.PinjamMain"
+            android:label="Data Peminjaman">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu.MenuMain" />
+        </activity>
+        <activity
+            android:name=".pinjam.PinjamCari"
+            android:label="Pinjam Cari" />
+        <activity
+            android:name=".pinjam.PinjamMHS"
+            android:label="Data Peminjam">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pinjam.PinjamMain" />
+        </activity>
+        <activity
+            android:name=".pinjam.PinjamBarang"
+            android:label="Data Barang Dipinjam"/>
+        <activity
+            android:name=".pinjam.PinjamKembali"
+            android:label="Barang Dikembalikan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pinjam.PinjamMain" />
+        </activity>
+        <activity
+            android:name=".pinjam.PinjamRiwayat"
+            android:label="Riwayat Peminjaman">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".pinjam.PinjamMain" />
+        </activity>
+        <activity
+            android:name=".pinjam.PinjamRiwayatCari"
+            android:label="Pinjam Riwayat Cari" />
+        <activity
+            android:name=".rusak.RusakMain"
+            android:label="Sedang Rusak">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu.MenuMain" />
+        </activity>
+        <activity
+            android:name=".rusak.RusakTambah"
+            android:label="Sedang Rusak">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".rusak.RusakMain" />
+        </activity>
+        <activity
+            android:name=".rusak.RusakCari"
+            android:label="Rusak Cari"/>
+        <activity
+            android:name=".rusak.RusakPerbaiki"
+            android:label="Akan Diperbaiki">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".rusak.RusakMain" />
+        </activity>
+        <activity
+            android:name=".rusak.RusakRiwayat"
+            android:label="Riwayat Kerusakan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".rusak.RusakMain" />
+        </activity>
+        <activity
+            android:name=".rusak.RusakRiwayatCari"
+            android:label="Rusak Riwayat Cari" />
+        <activity
+            android:name=".hilang.HilangMain"
+            android:label="Inventaris Hilang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".menu.MenuMain" />
+        </activity>
+        <activity
+            android:name=".hilang.HilangKetemu"
+            android:label="Sudah Ketemu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hilang.HilangMain" />
+        </activity>
+        <activity
+            android:name=".hilang.HilangRiwayat"
+            android:label="Riwayat Hilang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hilang.HilangMain" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".hilang.HilangCari"
+            android:label="Hilang Cari" />
+        <activity
+            android:name=".hilang.HilangRiwayatCari"
+            android:label="Riwayat Cari" />
+    </application>
+
+</manifest>

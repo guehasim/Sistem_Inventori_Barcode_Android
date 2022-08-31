@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hilang_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hsub_stuff_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hilang_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="Name Barang"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/hilang_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="50dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_below="@+id/hilang_name"
+            android:textColor="#4900BF"
+            android:text="Serial "
+            android:textSize="15sp" />
+
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#BDBDBD"
+            android:layout_below="@+id/hilang_serial"/>
+
+        <LinearLayout
+            android:id="@+id/p_hilang"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garis" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/garis"
+                android:textColor="#000000"
+                android:text="Tanggal Hilang"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/hilang_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="#ED0722"
+                android:text="Tanggal "
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hilang_sub_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/garisbawah"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#BDBDBD"
+            android:layout_below="@+id/p_hilang"/>
+    </RelativeLayout>
+
+</LinearLayout>
